@@ -184,7 +184,7 @@
     <footer class="footer">
       <div class="container">
         <p>
-          <a href="../data/friends.js" target="_blank">API Friends List</a> |
+          <a href="/api/friends" target="_blank">API Friends List</a> |
           <a href="https://github.com/syin1/FriendFinder" target="_blank">GitHub Repo</a>
         </p>
       </div>
@@ -281,7 +281,7 @@
         };
 
         // AJAX post the data to the friends API.
-        $.post("../data/friends.js", userData, function (data) {
+        $.post("/api/friends", userData, function (data) {
 
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#match-name").text(data.name);
