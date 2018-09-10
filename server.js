@@ -5,7 +5,7 @@ var path = require('path');
 
 // set up express server
 var app = express();
-var PORT = 8080;
+var PORT = process.env.PORT || 3000;
 
 // expose public directory
 app.use(express.static(path.join(__dirname, 'app/public')));
