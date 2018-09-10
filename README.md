@@ -10,7 +10,7 @@
 
 ### How It Works
 
-- Go to the app's home page at ...
+- Go to the app's home page at https://friendfinder123-app.herokuapp.com/
 - Answer 10 questions on the future of technology on a scale of 1 to 5 based on how much you agree or disagree with the prediction.
 - Once you finish and click on `submit`, your response will be stored and automatically compared to the answers from all other users.
 - The user with the most compatible profile will be shown, based on our similarity-ranking algorithm.
