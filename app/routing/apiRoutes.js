@@ -1,12 +1,16 @@
 var path = require('path');
 
+// get the friends data
 var friends = require(path.join(__dirname, '../data/friends.js'));
 
+// export for the main server
 module.exports = function(app) {
+  // handles get request, returns the entire data structure
   app.get('/api/friends', function(req, res) {
     res.json(friends);
   });
 
+  // handles post request, add new data and return friend with the closest match
   app.post('/api/friends', function(req, res) {
     // initialization
     var lowestscore = 100; // cannot be higher or equal to this number
