@@ -2,59 +2,82 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Friend Finder</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-  <link rel="stylesheet" type="text/css" , href="reset.css">
+  <title>Friend Finder App</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" , href="style.css">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrapcore.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">
-        <i class="fas fa-user-friends">
-          <span> </span>
-        </i>
-        <b>Friend Finder</b>
-      </h1>
-      <hr class="my-4">
-      <p>
-        <b>Answer a few basic questions.</b>
-      </p>
-      <p>
-        <b>Then find the friend with the greatest compatibility!</b>
-      </p>
-      <br>
-      <a class="btn btn-primary btn-lg" href="/survey" role="button">
-        <i class="fas fa-tasks"></i>
-        <span> </span>
-        <b>Go to Survey</b>
-      </a>
+
+  <div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+      <div class="cover-container">
+
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">
+              <i class="fas fa-comments"></i>
+            </h3>
+            <nav class="nav nav-masthead">
+              <a class="nav-link active" href="/api/friends" target="_blank">API Friends List</a>
+              <a class="nav-link" href="https://github.com/syin1/FriendFinder" target="_blank">GitHub Repo</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="inner cover">
+          <h1 class="cover-heading">
+            <i class="fas fa-user-friends">
+              <span> </span>
+            </i> Friend Finder</h1>
+          <p class="lead">Answer a few basic questions.
+            <br>Then find the friend with the greatest compatibility!</p>
+          <p class="lead">
+            <a href="/survey" class="btn btn-lg btn-secondary">
+              <i class="fas fa-tasks"></i> Go to Survey</a>
+          </p>
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <p>Built with
+              <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> by
+              <a href="https://github.com/syin1" target="_blank">@syin1</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
-    <footer class="footer">
-      <p>
-        <a href="/api/friends" target="_blank">API Friends List</a>
-        |
-        <a href="https://github.com/syin1/FriendFinder" target="_blank">GitHub Repo</a>
-      </p>
-    </footer>
   </div>
 
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 
 </html>
